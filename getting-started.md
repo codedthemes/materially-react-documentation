@@ -10,7 +10,7 @@ description: Things to know before you start with Materially
 
 ## React Hooks
 
-\*\*\*\*[**Hooks** ](https://reactjs.org/docs/hooks-reference.html)are a new edition in React 16.8 that allows you to use state and other React features, like the lifecycle method without access to the classes. \(Hooks brings you functional components, Hooks can do the thing once we are able to do with the class such as Reactlocal state, effect, and context has now done through useState, useEffect, useContext\).
+[**Hooks** ](https://reactjs.org/docs/hooks-reference.html)are a new edition in React 16.8 that allows you to use state and other React features, like the lifecycle method without access to the classes. (Hooks brings you functional components, Hooks can do the thing once we are able to do with the class such as Reactlocal state, effect, and context has now done through useState, useEffect, useContext).
 
 * [Basic Hooks](https://reactjs.org/docs/hooks-reference.html#basic-hooks)
   * [`useState`](https://reactjs.org/docs/hooks-reference.html#usestate)
@@ -30,4 +30,3 @@ description: Things to know before you start with Materially
 A perfect library with everything power-packed covering almost all the **UI** components that can be flexibly **used with React** web or mobile application. **Material**-**UI** components work in isolation. They are self-supporting, and will only inject the styles they need to display.
 
 React components for faster and easier web development. Build your own design system, or start with Material Design.
-

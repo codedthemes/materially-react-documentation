@@ -1,10 +1,10 @@
 ---
-description: Materially Documentation - ReactJS + Material UI Admin Template
+description: Materially Documentation - React.js + Material UI Admin Template
 ---
 
 # Welcome
 
-## ABOUT DOCS
+## About
 
 **Materially** is the most developer-friendly & highly customizable React **Hooks** + Redux with **Material UI**
 
@@ -12,33 +12,34 @@ We’ve followed the best industry standards to make our product easy, fast & hi
 
 ## Features
 
-* Material UI
+* Material UI latest v5
 * React Hooks
-* Thir-Party Authentication
-* Fully Responsive Layout 
-* Dashboard, **380+ Widget** Cards
+* 3'rd Party Authentication using JWT, Auth0 & Firebase
+* Fully Responsive Layout&#x20;
+* Dashboard, 50+ Widget Cards
 * JSS Powered
-* **75+ Pages**
-* Live Menu Customize
-* 6 months of free support included
-* Easy to Build and Setup
-* Clear Cut Code style
+* 75+ Pages
+* 6 months of free technical support
+* Easy to customize
+* Performance centric code
+* RTL Layout
+* Localization
 
-## Technical Specification  \(Credits 🙏\)
+## Technical Specification  (Credits)
 
-* React Hooks \(**17.0.1**\)
-* [Material UI](https://material-ui.com/) \(4.11.0\)
+* React (18.x)
+* [Material UI](https://material-ui.com/) (5.x)
 * SASS with JSS Powered
-* \*\*\*\*[Create React App](https://github.com/facebook/create-react-app) ****
+* [Create React App](https://github.com/facebook/create-react-app)&#x20;
 * [Redux](https://redux.js.org/)
-* [React Router](https://github.com/ReactTraining/react-router) 
+* [React Router](https://github.com/ReactTraining/react-router)&#x20;
 * [Firebase](https://firebase.google.com/docs/auth)
 * [Auth0](https://auth0.com/)
 * [JWT](https://jwt.io/)
+* [Localization](https://formatjs.io/docs/react-intl/)
 
 ## Any Suggestion? OR Feedback
 
 If you have any suggestions regarding “How To” recipes that should be on this page, Let’s know. We always appreciate your feedback.
 
-Reach us at codedthemes\[at\].gmail\[dot\]com
-
+Reach us at codedthemes\[at].gmail\[dot]com

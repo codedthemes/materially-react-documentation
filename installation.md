@@ -1,40 +1,61 @@
 # Installation
 
-This React template is based on [create-react-app](https://github.com/facebook/create-react-app) and has its `README.md` which you can find very useful.
+### **Installation**
 
-{% hint style="warning" %}
-You **don’t** need to install or configure tools like Webpack or Babel.  
-They are configured and hidden so that you can focus on the code.
-{% endhint %}
+Navigate to your root folder **`(ex. materially-react-hook-material-js)`**
 
-Before proceeding you’ll need to have the latest stable [NodeJS](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on your machine.
+```
+c:\>cd materially-react-hook-material-js
+```
 
-## To get started follow these steps
+Install Packages by **npm.**
 
-1. First of all, it's required to install [Node](https://nodejs.org/en/) and npm / [yarn](https://yarnpkg.com/lang/en/).
-2. Open your favorite console application \(Terminal, iTerm, Command Prompt, etc.\). Navigate to the `materially/`folder and **Install packages**  : `npm i,` `npm install` or `yarn install`. This command will install all the required [Node.js ](https://nodejs.org/en/)modules into the directory`node_modules`inside `materially/`folder. And now, you are ready to run the able pro material for the first time.
-3. To run the project locally: `npm start` or `yarn start` This command will runs the app in development mode. Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
+```bash
+c:\materially-react-hook-material-js> npm i --legacy-peer-deps
+```
 
-   The page will automatically reload if you make changes to the code.
+### Start
 
-4. Now you can use This React hooks material project for your application development, make the necessary changes.
-5. To builds the app for production `npm run build` or `yarn build`. It will create the `build/` folder inside this project directory. It correctly bundles React hooks material in production mode and optimizes the build for the best performance. The build is minified and the file names include the hashes. Your app is ready to be deployed.
+After package installation, you can start your app by using **`npm run start`** command
 
-{% hint style="success" %}
-The project was built assuming it is hosted at the server root folder of domain/platform i.e `http://example.com`.
+```bash
+c:\materially-react-hook-material-js> npm run start
+```
 
-You can control this with the homepage field in your `package.json`. To deploy build for sub-folder i.e `http://example.com/folder-name/` than `"homepage" : "http://example.com/folder-name/".`
+This will start your local server at **`http://localhost:3000`** Also, your terminal shows the following.
 
-You also need to set base-name `<BrowserRouter basename="folder-name">` in file`constant.js` at '../src/config/' directory, like  
-**`export const BASENAME = '/materially';`**
-{% endhint %}
+```javascript
+Compiled successfully!
 
-You can find detailed instructions on using Create React App and many tips in [its documentation](https://facebook.github.io/create-react-app/).
+You can now view materially-react-hook-material-js in the browser.
 
-{% hint style="info" %}
-**You’ll need to have Node v12.x.x or later on your local development machine** \(but it’s not required on the server\). You can use [nvm](https://github.com/creationix/nvm#installation) \(macOS/Linux\) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
-{% endhint %}
+Local:            http://localhost:3000    
+On Your Network:  http://192.168.29.77:3000
 
-  
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+```
 
+### Build & Deploy
 
+This might be too early to deploy but it is always good to know how to deploy.
+
+To build your app in production use **`npm run build`** command
+
+```javascript
+c:\materially-react-hook-material-js> npm run build
+```
+
+### Deploy for your live site
+
+Change the base URL with your domain and build your application.
+
+You can control this with the `homepage` field in your **`package.json`**
+
+{% code title="package.json" %}
+```javascript
+"homepage": "http://example.com"
+```
+{% endcode %}
+
+\

@@ -1,5 +1,5 @@
 ---
-description: 'A File Structure allows applications to read, write and modify data.'
+description: A File Structure allows applications to read, write and modify data.
 ---
 
 # File Structure
@@ -8,9 +8,9 @@ File Structures is the Organization of Data in Secondary Storage Device in such 
 
 ## Project structure
 
-Under the `able-pro-material/`the folder you will find the project folder structure.
+Under the `materially/`the folder you will find the project folder structure.
 
-```text
+```
 materially/
 ├── package.json             -> Package json file.
 ├── public/
@@ -31,6 +31,7 @@ materially/
     ├── services/            -> Data services 
     ├── store/               -> Redux actions, reducers & types
     ├── themes/              -> Material default theme
+    ├── utils/               -> Locale json files
     ├── views/               -> View files for all pages
     ├── config.js            -> Template constant value and live customization  
     ├── index.js             -> Application root js file
@@ -42,11 +43,10 @@ materially/
 
 Under the `materially/src/assets/scss/`the folder you will find the following folder structure.
 
-```text
+```
 SCSS/
 ├── custom/          -> 
 ├── plugins/              -> Third party plugins customisation scss
 ├── _themes-vars.scss     -> theme veriables
 ├── style.scss             -> Application main file
 ```
-

@@ -10,69 +10,45 @@ You can use the below explanation to add/remove menu routes and their menu items
 
 ## Configure route
 
-Open`materially/src/Routes.js`You will find the below example code. In the below code we have shown how you can add a new page route.
+Open`materially/src/routes/MainRoutes.js`You will find the below example code. In the below code we have shown how you can add a new page route.
 
 {% tabs %}
 {% tab title="router.js" %}
 ```javascript
-import React, { lazy, Suspense } from 'react';
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 
-import Loader from './component/Loader/Loader';
-import NavMotion from './layout/NavMotion';
-import MainLayout from './layout/MainLayout';
-import GuestGuard from "./component/Auth/GuestGuard";
-import AuthGuard from "./component/Auth/AuthGuard";
-import MinimalLayout from "./layout/MinimalLayout";
+import React, { lazy } from 'react';
 
-const AuthLogin = lazy(() => import('./views/Login'));
+// project import
+import MainLayout from 'layout/MainLayout';
+import AuthGuard from 'component/Auth/AuthGuard';
+import Loadable from 'component/Loadable';
 
-const DashboardDefault = lazy(() => import('./views/Dashboard/Default'))
-const SamplePage = lazy(() => import('./views/SamplePage'));
+const DashboardDefault = Loadable(lazy(() => import('../views/Dashboard/Default')));
+const SamplePage = Loadable(lazy(() => import('../views/SamplePage')));
 
-const Routes = () => {
-    const location = useLocation();
+// ==============================|| MAIN ROUTES ||============================== //
 
-    return (
-        <AnimatePresence>
-            <Suspense fallback={<Loader />}>
-                <Switch>
-                    <Redirect exact from="/" to="/dashboard/default" />
-                    <Route path={['/login']}>
-                        <MinimalLayout>
-                            <Switch location={location} key={location.pathname}>
-                                <NavMotion>
-                                    <GuestGuard>
-                                        <Route path="/login" component={AuthLogin} />
-                                    </GuestGuard>
-                                </NavMotion>
-                            </Switch>
-                        </MinimalLayout>
-                    </Route>
-                    <Route
-                        path={[
-                        '/dashboard/default',
-                        '/sample-page'
-                    ]}>
-                        <MainLayout>
-                            <Switch location={location} key={location.pathname}>
-                                <NavMotion>
-                                    <AuthGuard>
-                                        <Route path="/dashboard/default" component={DashboardDefault} />
-                                        <Route path="/sample-page" component={SamplePage} />
-                                    </AuthGuard>
-                                </NavMotion>
-                            </Switch>
-                        </MainLayout>
-                    </Route>
-                </Switch>
-            </Suspense>
-        </AnimatePresence>
-    );
+const MainRoutes = {
+  path: '/',
+  element: (
+    <AuthGuard>
+      <MainLayout />
+    </AuthGuard>
+  ),
+  children: [
+    {
+      path: '/dashboard/default',
+      element: <DashboardDefault />
+    },
+    {
+      path: '/sample-page',
+      element: <SamplePage />
+    }
+  ]
 };
 
-export default Routes;
+export default MainRoutes;
+
 
 ```
 {% endtab %}
@@ -220,4 +196,3 @@ export default {
 ```
 {% endtab %}
 {% endtabs %}
-

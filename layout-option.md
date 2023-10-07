@@ -16,7 +16,9 @@ You can edit this file at **`[ ../src/config.js]`**
 {% tab title="Dark Layout" %}
 * theme: `dark`
 {% endtab %}
+
+{% tab title="RTL" %}
+* rtlLayout: `true`
+{% endtab %}
 {% endtabs %}
-
-
 
